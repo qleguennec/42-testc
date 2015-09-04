@@ -3,6 +3,6 @@
 CURRENT_SHELL=$(echo $SHELL | cut -d/ -f3)
 
 mkdir -p .bin
-cp script/testc .bin/
+cp ~/42-testc/script/testc ~/.bin/
 echo 'PATH=$PATH:~/.bin' >> ~/."$CURRENT_SHELL"rc
-export PATH=$PATH:~/.bin
+echo "Install complete. Now reload your shell using 'zsh' or 'bash'"

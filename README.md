@@ -15,7 +15,28 @@ You need to be in the directory where your .c is.
 testc <source_file.c> <function_to_exec()> <"functions to add, seperated by spaces">
 ```
 example:
+```
 testc ft_print_alphabet.c "ft_print_alphabet()" "main ft_putchar"
+```
+
+ouput:
+```
+compiling main.c
+/tmp/testc/main.c:3:2: warning: implicit declaration of function 'ft_print_alphabet' is invalid in C99 [-Wimplicit-function-declaration]
+        ft_print_alphabet();
+		        ^
+	1 warning generated.
+copying main.o to /tmp/testc
+
+compiling ft_putchar.c
+copying ft_putchar.o to /tmp/testc
+
+Norme: ft_print_alphabet.c
+compile OK
+
+running ft_print_alphabet()
+abcdefghijklmnopqrstuvwxyz%
+```
 
 # notes
 - Vous aurez probablement un ou plusieurs warning. Don't panic, la moulinette s'en fout.
