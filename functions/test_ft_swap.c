@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void	test_ft_swap(void);
+void	test(void);
 
-void	test_ft_swap(void)
+void	test(void)
 {
 	int a;
 	int b;

@@ -7,5 +7,6 @@ void	test(void)
 	char *test;
 
 	test = "42 born to code";
-	printf("%s", ft_strrev(test));
+	printf("%s\n", test);
+	printf("%s\n", ft_strrev(test));
 }

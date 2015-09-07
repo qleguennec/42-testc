@@ -1,10 +1,5 @@
 #! /bin/sh
 
-if [ "$#" -ne 3 ]; then
-    echo "Illegal number of parameters"
-	exit 3
-fi	
-
 # copy source to temporary folders
 rm -rf /tmp/testc
 mkdir /tmp/testc
@@ -15,6 +10,9 @@ echo
 for f in "${FTOLINK[@]}"
 do
 	cat ~/42-testc/functions/$f.c | sed "s/FUNCTION_TO_REPLACE/$2/g" > /tmp/testc/$f.c
+	cat /tmp/testc/$f.c | sed "s/F_ARG/$2/g" > /tmp/testc/$f.c
+	cat /tmp/testc/$f.c | sed "s/A1/$4/g" > /tmp/testc/$f.c
+	cat /tmp/testc/$f.c | sed "s/A2/$5/g" > /tmp/testc/$f.c
 	echo "compiling $f.c"
 	gcc -c /tmp/testc/$f.c
 	echo "copying $f.o to /tmp/testc\n"
