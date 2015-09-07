@@ -9,10 +9,7 @@ FTOLINK=( $3 )
 echo 
 for f in "${FTOLINK[@]}"
 do
-	cat ~/42-testc/functions/$f.c | sed "s/FUNCTION_TO_REPLACE/$2/g" > /tmp/testc/$f.c
-	cat /tmp/testc/$f.c | sed "s/F_ARG/$2/g" > /tmp/testc/$f.c
-	cat /tmp/testc/$f.c | sed "s/A1/$4/g" > /tmp/testc/$f.c
-	cat /tmp/testc/$f.c | sed "s/A2/$5/g" > /tmp/testc/$f.c
+	cat ~/42-testc/functions/$f.c | sed -e "s/F_TO_REPLACE()/$2/g" > /tmp/testc/$f.c -e "s/F_ARG/$2/g" -e "s/A1/$4/g" -e "s/A2/$5/g" > /tmp/testc/$f.c
 	echo "compiling $f.c"
 	gcc -c /tmp/testc/$f.c
 	echo "copying $f.o to /tmp/testc\n"

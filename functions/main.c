@@ -1,5 +1,5 @@
 int		main(void)
 {
-	FUNCTION_TO_REPLACE;
+	F_TO_REPLACE;
 	return (0);
 }

@@ -1,10 +1,14 @@
 #include <stdio.h>
 
-int main(void)
+int	 main(void)
 {
-	while(A1 <= A2)
+	int i;
+
+	i = A1;
+	while(i <= A2)
 	{
-		printf("%d: %d\n", A1, F_ARG(A1));
-		A1++;
+		printf("%d: %d\n", i, F_ARG(i));
+		i++;
 	}
+	return 0;
 }
