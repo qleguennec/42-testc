@@ -12,6 +12,8 @@ void	test()
 	printf("%d\n", strcmp(test, "born to code"));
 	printf("\n");
 	
+<<<<<<< HEAD
+=======
 	printf("%d\n", ft_strcmp(test, "a"));
 	printf("%d\n", strcmp(test, "a"));
 	printf("\n");
@@ -20,6 +22,7 @@ void	test()
 	printf("%d\n", strcmp(test, "k;osfdijgsdfgu9d8faugs"));
 	printf("\n");
 	
+>>>>>>> 100fc1d51f359efb0a6ba1fe07f0d5cac9b7ce28
 	printf("%d\n", ft_strcmp(test, "aaaaaaaaaaaa"));
 	printf("%d\n", strcmp(test, "aaaaaaaaaaaa"));
 	printf("\n");
