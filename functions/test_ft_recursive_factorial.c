@@ -8,4 +8,6 @@ void	test(void)
 	printf("%d\n", ft_recursive_factorial(3));
 	printf("%d\n", ft_recursive_factorial(4));
 	printf("%d\n", ft_recursive_factorial(10));
+	printf("%d\n", ft_recursive_factorial(-42));
+	printf("%d\n", ft_recursive_factorial(4000));
 }

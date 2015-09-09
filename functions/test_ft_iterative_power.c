@@ -9,3 +9,11 @@ void	test(void)
 	printf("%d\n", ft_iterative_power(-1, 4));
 	printf("%d\n", ft_iterative_power(2, -3));
 }
+
+
+void	test_time(void)
+{
+	printf("%d\n", ft_iterative_power(10, 10));
+}
+
+
